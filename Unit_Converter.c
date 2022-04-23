@@ -9,14 +9,14 @@ int main() {
   int userinputC; // User inputted Celsius;
   int userinputUSDtoEuro; // User inputted for USD to EURO;
   int userinputUSDtoJPY; // User inputted for USD to JPY;
-  int userinputUSDtoRMB; // User inputted for USD to RMB;
-  int userinputOunce; // User inputted for Ounce;
+  
+
   int userinputGram; // User inputted for Gram;
   int fahrenheitToCelcius; // variable that stores the converted F->C;
   int celciusToFahrenheit; // variable that stores the converted C->F;
   float USDtoEURO ; // varaible that stores the converted USD->EURO;
   float USDtoJPY; // stores the converted USD->JPY;
-  float USDtoRMB; // stores the converted USD->RMB;
+
   float ounceToPounds; // stores the converted Ounce->Pounds;
   float gramsToPounds; // stores the vonerted Grams->Pounds;
   
@@ -53,7 +53,7 @@ int main() {
       printf("Here is a list of conversations to choose from: \n");
       printf("Enter 1 for USD to Euro. \n");
       printf("Enter 2 for USD to JPY. \n");
-      printf("Enter 3 for USD to RMB. \n");
+      
       scanf("%d",&currencyChoice);
       if(currencyChoice == 1){
           printf("Please enter the USD amount: \n");
@@ -67,12 +67,12 @@ int main() {
           USDtoJPY = userinputUSDtoJPY * 111.09;
           printf("JPY: %.2f",USDtoJPY);
       }
-      else if(currencyChoice == 3) {
-        printf("Please enter the USD amount: \n");
-        scanf("%d",&userinputUSDtoRMB);
-        USDtoRMB = userinputUSDtoRMB * 6.82;
-        printf("RMB: %.2f",USDtoRMB);
-      }
+     
+
+        
+        
+
+
       else
         printf("Please enter correct choice. \n");
    }
